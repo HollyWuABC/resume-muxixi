@@ -1,0 +1,48 @@
+@import '../styles/theme.less';
+
+.typo {
+    a {
+      color: @theme-color;
+      border-bottom: none;
+    }
+    h4{
+        font-size: 1.4em;
+    }
+    @media print {
+      a {
+        color: @font-color;
+        border-bottom: 1px solid @font-color;
+      }
+    }
+  }
+  .page-1 {
+    display: flex;
+    font-size: 14px;
+    .left {
+      width: 326px;
+      padding-left: 64px;
+      padding-right: 59px;
+      background-color: @theme-color-second;
+      ul {
+        margin: 0;
+        li {
+          font-weight: 400;
+          list-style: none;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      padding: 0 50px;
+    }
+  }
+  .page-2 {
+    font-size: 14px;
+    padding: 50px 60px;
+  }
+  
+  .version {
+    display: none;
+  }
+  
+
